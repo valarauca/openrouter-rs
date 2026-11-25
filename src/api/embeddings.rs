@@ -228,7 +228,7 @@ impl EmbeddingRequest {
 #[non_exhaustive]
 #[serde(untagged)]
 pub enum EmbeddingVector {
-    Float(Vec<f64>),
+    Float(Vec<f32>),
     Base64(String),
 }
 
